@@ -69,7 +69,7 @@ public class TreinoExercicioDao {
         }
     }
 
-    // (opcional) checar conflito de ordem destino
+
     public boolean existeOrdem(long idTreino, int ordem) throws SQLException {
         String sql = "SELECT 1 FROM TreinoExercicio WHERE Treino_idTreino = ? AND ordem = ? LIMIT 1";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {

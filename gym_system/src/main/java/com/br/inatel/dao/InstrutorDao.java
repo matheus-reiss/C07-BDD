@@ -99,7 +99,6 @@ public class InstrutorDao {
         }
     }
 
-    // ===== OPCIONAL: checar vínculos com Treino =====
     public boolean possuiVinculos(long idInstrutor) throws SQLException {
         String sql = "SELECT COUNT(*) AS qtd FROM Treino WHERE Instrutor_idInstrutor = ?";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {

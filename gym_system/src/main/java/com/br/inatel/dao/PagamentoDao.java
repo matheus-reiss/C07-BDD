@@ -4,7 +4,6 @@ import com.br.inatel.model.Assinatura;
 import com.br.inatel.model.Pagamento;
 import com.br.inatel.model.enums.PagamentoStatus;
 
-import java.math.BigDecimal;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
